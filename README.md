@@ -6,7 +6,24 @@
 
 This project is a reimplementation of Standard Template Library's *set* and *map* containers.<br>
 
-## Red-Black Tree 
+## Contents
+- [Introduction to STL](#introduction-to-stl)
+  - [Motivation](#motivation)
+  - [Containers](#containers-1)
+  - [Algorithms](#algorithms)
+- [Red-Black Tree](#red-black-tree)
+- [Iterators](#iterators)
+  - [What is it?](#what-is-it)
+  - [Types](#types)
+- [Set](#set)
+- [Map](#map)
+
+## Introduction to STL
+### Motivation
+### Containers
+### Algorithms
+
+## Red-Black Tree
 Under the set and the map containers we have data structure that will contain our data.
 For computational efficiency both of these containers have Red-Black Tree as a data structure.<br>
 In worst case for insertion and deletion we have: $$\color{black}O(\log(n))$$
@@ -23,3 +40,19 @@ A binary search tree is a red-black tree if it satisfies the following red-black
 > 3. If a node is red, then both its children are black.
 > 4. Every simple path from a node to a descendant leaf contains the same number of black nodes
 
+For the full understanding:
+1. ![Wikipedia](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
+2. ![Cormen et al.](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
+
+## Iterators
+
+### What is it
+
+
+### Types
+
+
+## Set
+
+
+## Map
