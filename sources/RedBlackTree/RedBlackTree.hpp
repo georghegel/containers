@@ -270,6 +270,9 @@ class RedBlackTree {
   NodePtr<T> getRoot() {
       return root;
   }
+  NodePtr<T> getTNIL (){
+      return TNIL;
+  }
   void deleteNode(const T& key) {
       auto node = search(key);
     if (node != TNIL) {
