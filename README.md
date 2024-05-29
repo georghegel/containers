@@ -83,7 +83,7 @@ The Standard Template Library (STL) in C++ provides a variety of containers, eac
 ### Algorithms
 
 ## Red-Black Tree
-![Red-Black Tree](./screens/rbt.svg.png)
+![Red-Black Tree](./screens/rbt.png)
 Under the set and the map containers we have data structure that will contain our data.
 For computational efficiency both of these containers have Red-Black Tree as a data structure.<br>
 In worst case for insertion and deletion we have: $$\color{black}O(\log(n))$$
