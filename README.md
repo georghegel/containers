@@ -11,7 +11,7 @@ Under the set and the map containers we have data structure that will contain ou
 For computational efficiency both of these containers have Red-Black Tree.<br>
 In worst case for insertion and deletion we have: O(log(n))
 
-$${\color{white}white}$$
+$${\color{red}white}$$
 
 By Cormen et al. book we have next properties of the RBT:<br>
 A red-black tree is a binary search tree with one extra bit of storage per node: its color, which can be either RED or BLACK. By constraining the way nodes can be colored on any path from the root to a leaf, red-black trees ensure that no such path is more than twice as long as any other, so that the tree is approximately balanced.<br>
