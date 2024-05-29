@@ -8,8 +8,8 @@ This project is a reimplementation of Standard Template Library's *set* and *map
 
 ## Red-Black Tree 
 Under the set and the map containers we have data structure that will contain our data.
-For computational efficiency both of these containers have Red-Black Tree.<br>
-In worst case for insertion and deletion we have: $$\color{white}O(\log(n))$$
+For computational efficiency both of these containers have Red-Black Tree as a data structure.<br>
+In worst case for insertion and deletion we have: $$\color{black}O(\log(n))$$
 
 By Cormen et al. book we have next properties of the RBT:<br>
 > A red-black tree is a binary search tree with one extra bit of storage per node: its color, which can be either $${\color{red}RED}$$ or $${\color{black}BLACK}$$<br>
