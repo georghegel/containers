@@ -41,8 +41,8 @@ A binary search tree is a red-black tree if it satisfies the following red-black
 > 4. Every simple path from a node to a descendant leaf contains the same number of black nodes
 
 For the full understanding:
-1. ![Wikipedia](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
-2. ![Cormen et al.](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
+1. [Wikipedia](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
+2. [Cormen et al.](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 
 ## Iterators
 
