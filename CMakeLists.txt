@@ -15,28 +15,28 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(containers
-        ./set/capacity.hpp
-        ./set/iterators.hpp
-        ./set/lookup.hpp
-        ./set/member_functions.hpp
-        ./set/modifiers.hpp
-        ./set/set.hpp
+        ./sources/set/capacity.hpp
+        ./sources/set/iterators.hpp
+        ./sources/set/lookup.hpp
+        ./sources/set/member_functions.hpp
+        ./sources/set/modifiers.hpp
+        ./sources/set/set.hpp
 
-        ./RedBlackTree/delete.hpp
-        ./RedBlackTree/finders.hpp
-        ./RedBlackTree/getters.hpp
-        ./RedBlackTree/insert.hpp
-        ./RedBlackTree/printers.hpp
-        ./RedBlackTree/rbt.hpp
-        ./RedBlackTree/rotations.hpp
-        ./RedBlackTree/tree_walkers.hpp
+        ./sources/RedBlackTree/delete.hpp
+        ./sources/RedBlackTree/finders.hpp
+        ./sources/RedBlackTree/getters.hpp
+        ./sources/RedBlackTree/insert.hpp
+        ./sources/RedBlackTree/printers.hpp
+        ./sources/RedBlackTree/rbt.hpp
+        ./sources/RedBlackTree/rotations.hpp
+        ./sources/RedBlackTree/tree_walkers.hpp
 
-        ./map/capacity.hpp
-        ./map/iterators.hpp
-        ./map/lookup.hpp
-        ./map/map.hpp
-        ./map/member_functions.hpp
-        ./map/modifiers.hpp
+        ./sources/map/capacity.hpp
+        ./sources/map/iterators.hpp
+        ./sources/map/lookup.hpp
+        ./sources/map/map.hpp
+        ./sources/map/member_functions.hpp
+        ./sources/map/modifiers.hpp
 
         ./tests/header.h
         ./tests/set.cc

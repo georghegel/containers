@@ -12,7 +12,4 @@ leaks: test
 	@cd build && leaks -atExit -- ./containers
 
 clean:
-	@rm -rf s21_containers.a *.o *.gcno *.gcda *.gcov *.gch \
-		test ./test.DSYM *.png *.html *.css *.info ./build gcov_report.*\
-		$(call rwildcard,.,*.o) \
-		$(call rwildcard,.,*.html)
+	@rm -rf ./build
