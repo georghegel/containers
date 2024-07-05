@@ -241,3 +241,12 @@ Use cases: array
 ## Unordered set
 
 ## Unordered map
+
+## References
+
+[[1] Standard Template Library](https://en.wikipedia.org/wiki/Standard_Template_Library)<br>
+[[2] Algorithms](https://en.wikipedia.org/wiki/Algorithm_(C%2B%2B))<br>
+[[3] Iterators](https://en.wikipedia.org/wiki/Iterator)<br>
+[[4] Red Black Tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)<br>
+[[5] C++ Standard](https://isocpp.org/files/papers/N4860.pdf)<br>
+
