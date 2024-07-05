@@ -41,6 +41,17 @@ This project is a reimplementation of Standard Template Library's *set* and *map
 
 ## Installation
 
+Install and run tests:
+```shell
+git clone https://github.com/georghegel/containers.git && cd containers
+make test
+```
+
+Check for memory leaks:
+```shell
+make leaks
+```
+
 Usage:
 ```c++
 
@@ -57,17 +68,6 @@ int main(){
     auto it = a.find(3);        // returns an iterator to the found element, otherwise nullptr
 }
 
-```
-
-Run tests:
-```shell
-git clone https://github.com/georghegel/containers.git && cd containers
-make test
-```
-
-Check for memory leaks:
-```shell
-make leaks
 ```
 
 ## Introduction to STL
