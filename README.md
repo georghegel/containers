@@ -106,13 +106,104 @@ For the full understanding:
 
 ## Iterators
 
-### What is it
+We will not invent the wheel and will define iterators as it defined in a C++ Standard:
+```
+1.
+Iterators are a generalization of pointers that allow a C++ program to work with different data structures
+(for example, containers and ranges) in a uniform manner. To be able to construct template algorithms
+that work correctly and efficiently on different types of data structures, the library formalizes not just the
+interfaces but also the semantics and complexity assumptions of iterators. An input iterator i supports the
+expression *i, resulting in a value of some object type T, called the value type of the iterator. An output
+iterator i has a non-empty set of types that are indirectly_writable to the iterator; for each such type T,
+the expression *i = o is valid where o is a value of type T. For every iterator type X, there is a corresponding
+signed integer-like type (23.3.4.4) called the difference type of the iterator.
+        
+2.
+Since iterators are an abstraction of pointers, their semantics are a generalization of most of the semantics of
+pointers in C++. This ensures that every function template that takes iterators works as well with regular
+pointers. This document defines six categories of iterators, according to the operations defined on them: input
+iterators, output iterators, forward iterators, bidirectional iterators, random access iterators, and contiguous
+iterators, as shown in Table 83.
+```
 
+Table 83: Relations among iterator categories [tab:iterators.relations]
+
+![Iterator Types](./screens/Iterator%20Types.png)
 
 ### Types
 
+Each higher level iterator contains all properties of the previous levels.<br>
+For example, Bidirectional iterator has the properties of the Forward, which has all properties of the I/O.<br>
+
+Picture should make it clear:<br><br>
+![ITD](./screens/Iterator%20Types%20Dependency.png)
+
+#### Input/Output
+
+> The input_iterator concept defines requirements for a type whose referenced values can be read (from the
+requirement for indirectly_readable (23.3.4.2)) and which can be both pre- and post-incremented.
+
+Means that we can iterate over ++a and a++ operators.<br>
+And also can read the values by "*" operator.
+
+> The output_iterator concept defines requirements for a type that can be used to write values (from the
+requirement for indirectly_writable (23.3.4.3)) and which can be both pre- and post-incremented.
+
+Same as above + we can write in it. 
+
+#### Forward
+
+> The forward_iterator concept adds copyability, equality comparison, and the multi-pass guarantee.
+
+Added equality comparison (multi-pass guarantee I haven't researched yet)
+
+Use cases: forward_list
+
+#### Bidirectional
+
+> The bidirectional_iterator concept adds the ability to move an iterator backward as well as forward.
+
+Added: --a and a--
+
+Use cases: set, map, multiset, multimap, list, queue
+
+#### Random Access
+
+> The random_access_iterator concept adds support for constant-time advancement with +=, +, -=, and -,
+as well as the computation of distance in constant time with -. Random access iterators also support array
+notation via subscripting.
+
+New properties and operations are given below:
+```c++
+template<class I>
+    concept random_access_iterator =
+        bidirectional_iterator<I> &&
+        derived_from<ITER_CONCEPT(I), random_access_iterator_tag> &&
+        totally_ordered<I> &&
+        sized_sentinel_for<I, I> &&
+        requires(I i, const I j, const iter_difference_t<I> n) {
+            { i += n } -> same_as<I&>;
+            { j + n } -> same_as<I>;
+            { n + j } -> same_as<I>;
+            { i -= n } -> same_as<I&>;
+            { j - n } -> same_as<I>;
+            { j[n] } -> same_as<iter_reference_t<I>>;
+        };
+```
+
+Use cases: vector
+
+#### Contiguous
+
+> The contiguous_iterator concept provides a guarantee that the denoted elements are stored contiguously
+in memory.
+
+*Haven't learned yet*
+
+Use cases: array
 
 ## Set
+
 
 
 ## Map
