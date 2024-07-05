@@ -19,8 +19,24 @@ This project is a reimplementation of Standard Template Library's *set* and *map
 - [Iterators](#iterators)
   - [What is it?](#what-is-it)
   - [Types](#types)
+    - [Input/Output](#inputoutput)
+    - [Forward](#forward)
+    - [Bidirectional](#bidirectional)
+    - [Random Access](#random-access)
+    - [Contiguous](#contiguous)
+- [Vector](#vector)
+- [Stack](#stack)
+- [Array](#array)
+- [List](#list)
+  - [Forward list](#forward-list)
+- [Deque](#deque) 
+  - [Queue](#queue)
 - [Set](#set)
 - [Map](#map)
+- [Multiset](#mulstiset)
+- [Multimap](#multimap)
+- [Unordered set](#unordered-set)
+- [Unordered map](#unordered-map)
 
 ## Introduction to STL
 ### Motivation
@@ -191,7 +207,7 @@ template<class I>
         };
 ```
 
-Use cases: vector
+Use cases: vector, deque
 
 #### Contiguous
 
@@ -202,8 +218,26 @@ in memory.
 
 Use cases: array
 
+## Vector
+
+## Stack
+
+## Array
+
+## List
+### Forward list
+
+## Deque
+### Queue
+
 ## Set
 
-
-
 ## Map
+
+## Multiset
+
+## Multimap
+
+## Unordered set
+
+## Unordered map
