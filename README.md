@@ -7,6 +7,7 @@
 This project is a reimplementation of Standard Template Library's *set* and *map* containers.<br>
 
 ## Contents
+- [Installation](#installation)
 - [Introduction to STL](#introduction-to-stl)
   - [Motivation](#motivation)
   - [Containers](#containers-1)
@@ -37,6 +38,37 @@ This project is a reimplementation of Standard Template Library's *set* and *map
 - [Multimap](#multimap)
 - [Unordered set](#unordered-set)
 - [Unordered map](#unordered-map)
+
+## Installation
+
+Usage:
+```c++
+
+#include "containers.h"
+
+int main(){
+    
+    s21::set a = {1,2,3,4,5};   // creates the set (1,2,3,4,5)
+    a.insert(6);                // adds 6 to it (1,2,3,4,5,6)
+    a.erase(5);                 // removes 5 from the set (1,2,3,4,6)
+    a.insert(6);                // does nothing because we already have 6 (1,2,3,4,6)
+    size_t sz = a.size();       // returns set's size: 5
+    auto bg = a.begin();        // returns begin iterator
+    auto it = a.find(3);        // returns an iterator to the found element, otherwise nullptr
+}
+
+```
+
+Run tests:
+```shell
+git clone https://github.com/georghegel/containers.git && cd containers
+make test
+```
+
+Check for memory leaks:
+```shell
+make leaks
+```
 
 ## Introduction to STL
 ### Motivation
