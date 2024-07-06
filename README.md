@@ -25,19 +25,26 @@ This project is a reimplementation of Standard Template Library's *set* and *map
     - [Bidirectional](#bidirectional)
     - [Random Access](#random-access)
     - [Contiguous](#contiguous)
-- [Vector](#vector)
-- [Stack](#stack)
-- [Array](#array)
-- [List](#list)
-  - [Forward list](#forward-list)
-- [Deque](#deque) 
+- [Sequence Containers](#sequence-containers-detailed)
+  - [Vector](#vector)
+  - [Deque](#deque)
+  - [List](#list)
+    - [Forward list](#forward-list)
+  - [Array](#array)
+- [Associative Containers](#associative-containers-detailed)
+  - [Set](#set)
+  - [Map](#map)
+  - [Multiset](#multiset)
+  - [Multimap](#multimap)
+- [Unordered Associative Containers](#unordered-associative-containers-detailed)
+  - [Unordered set](#unordered-set)
+  - [Unordered map](#unordered-map)
+  - [Unordered multiset](#unordered-multiset)
+  - [Unordered multimap](#unordered-multimap)
+- [Container Adaptors](#container-adaptors-detailed)
+  - [Stack](#stack) 
   - [Queue](#queue)
-- [Set](#set)
-- [Map](#map)
-- [Multiset](#mulstiset)
-- [Multimap](#multimap)
-- [Unordered set](#unordered-set)
-- [Unordered map](#unordered-map)
+  - [Priority queue](#priority-queue)
 
 ## Installation
 
@@ -250,29 +257,35 @@ in memory.
 
 Use cases: array
 
-## Vector
 
-## Stack
+## Sequence Containers Detailed
 
-## Array
+### Vector
+### Deque
+### List
+#### Forward list
+### Array
 
-## List
-### Forward list
+## Associative Containers Detailed
 
-## Deque
+### Set
+### Map
+### Multiset
+### Multimap
+
+## Unordered Associative Containers Detailed
+
+### Unordered set
+### Unordered map
+### Unordered multiset
+### Unordered multimap
+
+
+## Container Adaptors Detailed
+
+### Stack
 ### Queue
-
-## Set
-
-## Map
-
-## Multiset
-
-## Multimap
-
-## Unordered set
-
-## Unordered map
+### Priority Queue
 
 ## References
 
