@@ -7,7 +7,7 @@
 This project is a reimplementation of Standard Template Library's *set* and *map* containers.<br>
 
 ## Contents
-- [Installation](#installation)a
+- [Installation](#installation)
 - [Introduction to STL](#introduction-to-stl)
   - [Motivation](#motivation)
   - [Containers](#containers-1)
