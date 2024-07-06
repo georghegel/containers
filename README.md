@@ -1,13 +1,13 @@
 # containers
 
-![Kendrick Lamar - euphoria.](./screens/euphoria.webp)
+![Kendrick Lamar - euphoria.](./img/euphoria.webp)
 *Kendrick Lamar - euphoria*<br>
 *Have you ever played have-you-ever?*
 
 This project is a reimplementation of Standard Template Library's *set* and *map* containers.<br>
 
 ## Contents
-- [Installation](#installation)
+- [Installation](#installation)a
 - [Introduction to STL](#introduction-to-stl)
   - [Motivation](#motivation)
   - [Containers](#containers-1)
@@ -141,7 +141,7 @@ The Standard Template Library (STL) in C++ provides a variety of containers, eac
 ### Algorithms
 
 ## Red-Black Tree
-![Red-Black Tree](./screens/red-black-tree_0.webp)
+![Red-Black Tree](./img/red-black-tree_0.webp)
 Under the set and the map containers we have data structure that will contain our data.
 For computational efficiency both of these containers have Red-Black Tree as a data structure.<br>
 In worst case for insertion and deletion we have: $$\color{black}O(\log(n))$$
@@ -186,7 +186,7 @@ iterators, as shown in Table 83.
 
 Table 83: Relations among iterator categories [tab:iterators.relations]
 
-![Iterator Types](./screens/Iterator%20Types.png)
+![Iterator Types](./img/Iterator%20Types.png)
 
 ### Types
 
@@ -194,7 +194,7 @@ Each higher level iterator contains all properties of the previous levels.<br>
 For example, Bidirectional iterator has the properties of the Forward, which has all properties of the I/O.<br>
 
 Picture should make it clear:<br><br>
-![ITD](./screens/Iterator%20Types%20Dependency.png)
+![ITD](./img/Iterator%20Types%20Dependency.png)
 
 #### Input/Output
 
