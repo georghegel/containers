@@ -32,11 +32,14 @@ This project is a reimplementation of Standard Template Library's *set* and *map
     - [Forward list](#forward-list)
   - [Array](#array)
 - [Associative Containers](#associative-containers-detailed)
+  - [Balanced Binary Search Trees](#balanced-binary-search-trees)
+  - [Red Black Tree Implementation](#red-black-tree-implementation)
   - [Set](#set)
   - [Map](#map)
   - [Multiset](#multiset)
   - [Multimap](#multimap)
 - [Unordered Associative Containers](#unordered-associative-containers-detailed)
+  - [Hash tables](#hash-tables)
   - [Unordered set](#unordered-set)
   - [Unordered map](#unordered-map)
   - [Unordered multiset](#unordered-multiset)
@@ -268,6 +271,8 @@ Use cases: array
 
 ## Associative Containers Detailed
 
+### Balanced Binary Search Trees
+### Red Black Tree Implementation
 ### Set
 ### Map
 ### Multiset
@@ -275,6 +280,7 @@ Use cases: array
 
 ## Unordered Associative Containers Detailed
 
+### Hash Tables
 ### Unordered set
 ### Unordered map
 ### Unordered multiset
