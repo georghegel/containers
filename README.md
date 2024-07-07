@@ -4,7 +4,7 @@
 *Kendrick Lamar - euphoria*<br>
 *Have you ever played have-you-ever?*
 
-This project is a reimplementation of Standard Template Library's *set* and *map* containers.<br>
+This project is a reimplementation of Standard Template Library's containers.<br>
 
 ## Contents
 - [Installation](#installation)
@@ -112,7 +112,7 @@ The Standard Template Library (STL) in C++ is a powerful and flexible library th
 
 The Standard Template Library (STL) in C++ provides a variety of containers, each designed to handle different types of data storage and access patterns efficiently. Here is a list of the main STL containers along with a brief description of each:<br>
 
-*As of 29.05.2024 I've only implemented set and map. Will implement other ones in future*
+*As of 07.07.2024 I've only implemented set and map. Will implement other ones in the future*
 
 #### Sequence Containers
 1. `std::vector`
